@@ -1,0 +1,6 @@
+[90m2025-07-18T20:46:34.046Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Starting percy
+[90m2025-07-18T20:46:35.850Z[39m [31mERROR[39m [97m@wdio/browserstack-service[39m Unable to fetch percy project token
+[90m2025-07-18T20:46:35.853Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Error in percy setup Error: Could not start percy, check percy logs for info.
+    at BrowserstackLauncherService.setupPercy (file:///C:/webdriverio-mobile/node_modules/@wdio/browserstack-service/build/index.js:3926:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BrowserstackLauncherService.onPrepare (file:///C:/webdriverio-mobile/node_modules/@wdio/browserstack-service/build/index.js:3801:9)
