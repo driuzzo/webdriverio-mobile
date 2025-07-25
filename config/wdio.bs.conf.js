@@ -8,13 +8,14 @@ exports.config = {
     [
       'browserstack',
       {
-        app: process.env.BROWSERSTACK_APP_ID,
+        //app: process.env.BROWSERSTACK_APP_ID,
         buildIdentifier: "12.0",
         browserstackLocal: true
       },
     ]
   ],
   capabilities: [{
+    app: process.env.BROWSERSTACK_APP_ID,
     'bstack:options': {
       deviceName: 'Xiaomi Redmi Note 11',
       platformVersion: '11.0',
