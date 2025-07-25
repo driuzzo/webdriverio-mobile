@@ -5,9 +5,9 @@ const AppUtils = require('../utils/appUtils');
 const apps = require('../config/apps.config');
 
 describe('suite', () => {
-    /*beforeEach(async () => {    
+    beforeEach(async () => {    
         await AppUtils.openApp(apps.androidApis);
-    });*/
+    });
 
     it('test', async () => {
         await HomePage.openAccessibilityMenu();        
@@ -28,7 +28,7 @@ describe('suite', () => {
         expect(await AppPage.perfilQueryTextInput.getText()).toBe('Hello World');    
     });
 
-    /*afterEach(async () => {
+    afterEach(async () => {
         await AppUtils.closeApp(apps.androidApis);
-    });*/
+    });
 });
