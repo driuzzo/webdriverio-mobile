@@ -15,22 +15,23 @@ exports.config = {
     ]
   ],
   capabilities: [{
-     'bstack:options': {
-      deviceName: 'Samsung Galaxy S20',
-      platformVersion: '10.0',
-      platformName: 'android',
-    }
-  }, {
     'bstack:options': {
       deviceName: 'Xiaomi Redmi Note 11',
       platformVersion: '11.0',
       platformName: 'android',
-    } }, {
-    'bstack:options': {
-      deviceName: 'Google Pixel 8',
-      platformVersion: '14.0',
-      platformName: 'android',
-    },
+    }
+  // }, {
+  //   'bstack:options': {
+  //     deviceName: 'Samsung Galaxy S20',
+  //     platformVersion: '10.0',
+  //     platformName: 'android',
+  //   }
+  // }, {
+  //   'bstack:options': {
+  //     deviceName: 'Google Pixel 8',
+  //     platformVersion: '14.0',
+  //     platformName: 'android',
+  //   },
   }],
   commonCapabilities: {
     'bstack:options': {
