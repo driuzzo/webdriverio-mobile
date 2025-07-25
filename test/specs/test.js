@@ -29,6 +29,6 @@ describe('suite', () => {
     });
 
     afterEach(async () => {
-        await AppUtils.closeApp(appID);
+        await AppUtils.closeApp(apps.androidApis);
     });
 });
