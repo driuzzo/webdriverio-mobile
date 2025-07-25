@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:emulator": "emulator -avd nightwatch-android-11 -no-snapshot & adb wait-for-device",
+    "start:emulator": "emulator -avd Pixel_4 -no-snapshot & adb wait-for-device",
     "test:mobile": "npm run start:emulator && wdio run wdio.conf.js",
     "test:saucelabs": "npx wdio run .\\config\\wdio.saucelabs.conf.js --spec test/specs/saucelabs.js",
     "test:apidemos": "npx wdio run .\\config\\wdio.apidemos.conf.js --spec test/specs/test.js"
