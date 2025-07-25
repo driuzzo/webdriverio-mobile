@@ -2,10 +2,11 @@ const HomePage = require('../pageobjects/homePage.page');
 const AccessibilityPage = require('../pageobjects/accessibility.page');
 const AppPage = require('../pageobjects/app.page');
 const AppUtils = require('../utils/appUtils');
+const apps = require('../config/apps.config');
 
 describe('suite', () => {
     beforeEach(async () => {    
-        await AppUtils.openApp('io.appium.android.apis');
+        await AppUtils.openApp(apps.androidApis);
     });
 
     it('test', async () => {
@@ -28,6 +29,6 @@ describe('suite', () => {
     });
 
     afterEach(async () => {
-        await AppUtils.closeApp('io.appium.android.apis');
+        await AppUtils.closeApp(appID);
     });
 });

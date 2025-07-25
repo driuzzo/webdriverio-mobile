@@ -1,26 +1,29 @@
 const HomePage = require('../pageobjects/homePage.page');
 const ViewsPage = require('../pageobjects/views.page');
 const AppUtils = require('../utils/appUtils');
+const apps = require('../config/apps.config'); // Import app IDs
+
+
 
 describe('Scroll', () => {
     beforeEach(async () => {
-       await AppUtils.openApp('io.appium.android.apis');
+       await AppUtils.openApp(apps.androidApis);
        await HomePage.openViewsMenu();
     });
 
-    it.only('test', async () => {                
+    it('should do fast vertical scroll', async () => {                
         await AppUtils.fastScroll();
         expect(await ViewsPage.tabs).toBeDisplayed();
         await ViewsPage.tabs.click();
     });
 
-    it('test2', async () => {
+    it('should do horizontal scroll', async () => {
         await ViewsPage.openGalleryMenu();
         await ViewsPage.openPhotosMenu();
         await AppUtils.doHorizontalScroll();
     });
 
     afterEach(async () => {
-        await AppUtils.closeApp('io.appium.android.apis');
+        await AppUtils.closeApp(apps.androidApis);
     });
 });
