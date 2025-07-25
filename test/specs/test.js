@@ -20,7 +20,7 @@ describe('suite', () => {
 
     it('test2', async () => {        
         await HomePage.openAppMenu();
-        await AppUtils.fastScroll();
+        // await AppUtils.fastScroll();
         expect(await AppPage.search).toBeDisplayed();
         await AppPage.openSearch();
         await AppPage.openInvokeSearch();
