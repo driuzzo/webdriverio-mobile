@@ -15,6 +15,7 @@ exports.config = {
     ]
   ],
   capabilities: [{
+    app: process.env.BROWSERSTACK_APP_ID,
     'bstack:options': {
       deviceName: 'Xiaomi Redmi Note 11',
       platformVersion: '11.0',
