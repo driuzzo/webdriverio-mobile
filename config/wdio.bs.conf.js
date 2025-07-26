@@ -4,7 +4,7 @@ exports.config = {
   user: process.env.BROWSERSTACK_USERNAME,
   key: process.env.BROWSERSTACK_ACCESS_KEY,
   hostname: 'hub.browserstack.com',
-  services: [
+  /*services: [
     [
       'browserstack',
       {
@@ -13,7 +13,7 @@ exports.config = {
         browserstackLocal: true
       },
     ]
-  ],
+  ],*/
   capabilities: [{
     'bstack:options': {
       app: process.env.BROWSERSTACK_APP_ID,
