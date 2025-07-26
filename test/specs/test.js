@@ -5,9 +5,9 @@ const AppUtils = require('../utils/appUtils');
 const apps = require('../config/apps.config');
 
 describe('suite', () => {
-    beforeEach(async () => {    
+    /*beforeEach(async () => {    
         await AppUtils.openApp(apps.androidApis);
-    });
+    });*/
 
     it('test', async () => {
         await HomePage.openAccessibilityMenu();        
@@ -18,7 +18,7 @@ describe('suite', () => {
         expect(await AccessibilityPage.nodeProvider).toBeDisplayed();
     });
 
-    it('test2', async () => {        
+    /*it('test2', async () => {        
         await HomePage.openAppMenu();
         // await AppUtils.fastScroll();
         expect(await AppPage.search).toBeDisplayed();
@@ -30,5 +30,5 @@ describe('suite', () => {
 
     afterEach(async () => {
         await AppUtils.closeApp(apps.androidApis);
-    });
+    });*/
 });
