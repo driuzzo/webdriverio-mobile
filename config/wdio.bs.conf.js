@@ -4,19 +4,18 @@ exports.config = {
   user: process.env.BROWSERSTACK_USERNAME,
   key: process.env.BROWSERSTACK_ACCESS_KEY,
   hostname: 'hub.browserstack.com',
-  /*services: [
+  services: [
     [
       'browserstack',
       {
-        //app: 'bs://64f11b62079534c89e86df8943c4327ad13ce8ba',
+        app: 'bs://64f11b62079534c89e86df8943c4327ad13ce8ba',
         buildIdentifier: "12.0",
         browserstackLocal: true
       },
     ]
-  ],*/
+  ],
   capabilities: [{
     'bstack:options': {
-      app: process.env.BROWSERSTACK_APP_ID,
       deviceName: 'Xiaomi Redmi Note 11',
       platformVersion: '11.0',
       platformName: 'android',
