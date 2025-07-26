@@ -16,6 +16,7 @@ exports.config = {
   ],
   capabilities: [{
     'bstack:options': {
+      app: process.env.BROWSERSTACK_APP_ID,
       deviceName: 'Xiaomi Redmi Note 11',
       platformVersion: '11.0',
       platformName: 'android',
@@ -35,7 +36,6 @@ exports.config = {
   }],
   commonCapabilities: {
     'bstack:options': {
-      app: process.env.BROWSERSTACK_APP_ID,
       projectName: "BrowserStack Samples",
       buildName: 'browserstack build',
       sessionName: 'BStack parallel webdriverio-appium',
