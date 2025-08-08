@@ -13,6 +13,10 @@ class HomePage {
         return $('~Views');
     }
 
+    get viewsButton() {
+        return $('~Views');
+    }
+
     async openAccessibilityMenu() {
         await this.accessibilityButton.click();
     }

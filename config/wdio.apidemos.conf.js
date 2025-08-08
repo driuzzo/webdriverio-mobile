@@ -9,11 +9,14 @@ specs= [
 capabilities= [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
+        // 'appium:chromedriver_autodownload': true,
         //browserName: 'Chrome',
         'appium:deviceName': 'Android GoogleAPI Emulator',
         'appium:platformVersion': '11.0',
         'appium:automationName': 'UiAutomator2',
         'appium:app': path.join(process.cwd(),  '\\app\\ApiDemos-debug.apk'),
+        //'appium:chromedriverExecutable': '\\chromedriver-mobile\\chromedriver.exe',
+        //'appium:chromedriverAutoDownload': true,
     }]
 
 exports.config = config;

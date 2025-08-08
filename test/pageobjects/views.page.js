@@ -1,6 +1,6 @@
 class ViewPage {
     get webView() {
-        return $('android.widget.TextView[contains(@text, "WebView")]');
+        return $('~WebView');
     }
     get gallery() {
         return $('~Gallery');
@@ -16,6 +16,9 @@ class ViewPage {
     }
     async openPhotosMenu() {
         return await this.photos.click();
+    }
+    async openWebViewMenu() {
+        return await this.webView.click();
     }
 }
 
